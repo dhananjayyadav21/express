@@ -1,0 +1,16 @@
+<nav class="bg-white shadow-md w-full sticky top-0 z-50">
+    <div class="max-w-5xl mx-auto px-4">
+        <div class="flex justify-between items-center h-16">
+            <div class="flex-shrink-0 text-2xl font-bold text-gray-900 font-sans select-none">
+                <a href="/">HomeCUT</a>
+            </div>
+            <div class="flex space-x-4">
+                <a href="/"
+                    class="text-gray-500 <%= currentPage === 'Home' ? 'text-gray-900' : 'hover:text-gray-900' %> px-3 py-2 rounded-md text-lg font-medium transition">Home</a>
+                <a href="/addhome"
+                    class="text-gray-500 <%= currentPage === 'AddHome' ? 'text-gray-900' : 'hover:text-gray-900' %> px-3 py-2 rounded-md text-lg font-medium transition">Add
+                    Home</a>
+            </div>
+        </div>
+    </div>
+</nav>

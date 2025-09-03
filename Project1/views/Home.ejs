@@ -1,0 +1,36 @@
+<%- include('partials/header') %>
+
+    <body class="bg-white min-h-screen">
+        <%- include('partials/nav') %>
+            <main class="max-w-6xl mx-auto py-10 px-4">
+                <h1
+                    class="text-2xl sm:text-4xl font-extrabold text-black mb-6 sm:m-8 sm:mb-16 tracking-tight text-center drop-shadow-lg">
+                    View and Book Your Home</h1>
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-8">
+                    <% homes.forEach(function(home) { %>
+                        <div
+                            class="bg-white rounded-xl shadow-md overflow-hidden hover:shadow-lg transition flex flex-col border border-gray-200">
+                            <img src="<%= home.imageUrl %>" alt="Home" class="w-full h-48 object-cover">
+                            <div class="p-5 flex-1 flex flex-col">
+                                <h2 class="text-xl font-semibold text-black mb-2">
+                                    <%= home.title %>
+                                </h2>
+                                <p class="text-gray-700 mb-2 flex-1">Location: <span class="font-medium">
+                                        <%= home.location %>
+                                    </span></p>
+                                <p class="text-gray-700 mb-2">Price per Night: <span class="font-semibold">$<%=
+                                            home.price %></span></p>
+                                <p class="text-gray-700 mb-4">Rating: <span class="font-semibold">
+                                        <%= home.rating %>
+                                    </span> ⭐</p>
+                                <a href="#"
+                                    class="inline-block mt-auto px-4 py-2 bg-black text-white rounded-lg font-medium shadow hover:bg-gray-900 transition">View
+                                    Details</a>
+                            </div>
+                        </div>
+                        <% }) %>
+                </div>
+            </main>
+    </body>
+
+    </html>
