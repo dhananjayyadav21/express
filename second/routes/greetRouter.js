@@ -8,7 +8,7 @@ const path = require('path');
 const rootDir = require('../utils/rootDir');
 
 Router.get('/', (req, res) => {
-    res.sendFile(path.join(rootDir, 'view', 'greet.html'));
+    res.sendFile(path.join(rootDir, 'views', 'greet.html'));
 })
 
 module.exports = Router;

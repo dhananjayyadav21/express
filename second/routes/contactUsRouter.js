@@ -8,7 +8,7 @@ const path = require('path');
 const rootDir = require('../utils/rootDir');
 
 Router.get('/contact-us', (req, res) => {
-    res.sendFile(path.join(rootDir, 'view', 'contact-us.html'));
+    res.sendFile(path.join(rootDir, 'views', 'contact-us.html'));
 })
 
 Router.post('/contact-us', (req, res) => {
