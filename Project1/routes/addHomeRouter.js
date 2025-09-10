@@ -34,6 +34,7 @@ addHomeRouter.post('/addhome', (req, res) => {
     res.render('success');
 })
 
+
 module.exports = {
     addHomeRouter,
     homes
