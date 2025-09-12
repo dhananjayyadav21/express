@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Home</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="bg-white min-h-screen">
+    <div class="max-w-4xl mx-auto py-10 px-4">
+        <h1 class="text-4xl font-extrabold text-black mb-8 text-center">Welcome Home!</h1>
+        <div class="bg-white rounded-xl shadow-md p-8 border border-gray-200 text-center">
+            <p class="text-lg text-gray-700">You are now logged in. Enjoy your stay!</p>
+        </div>
+    </div>
+    <script>
+        // If this page is rendered, user is logged in
+        localStorage.setItem('userLog', 'true');
+    </script>
+</body>
+
+</html>
